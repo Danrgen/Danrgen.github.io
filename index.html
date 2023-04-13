@@ -1,92 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-</html>
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ejemplo de página web</title>
-    <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ejemplo de imagen en HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER EN CSS</title>
+ 
   </head>
-  <body>
-    <h1>Mi imagen favorita</h1>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logotipo de Google">
-    <!--
-    <video autoplay loop muted>
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-    <source src="https://www.w3schools.com/html/mov_bbb.webm" type="video/webm">
-    Tu navegador no soporta la etiqueta de video.
-    -->
-    </video>
-  </body>
-</html>
 
-  </head>
   <body>
-    
-    <header>
-      <h1>Bienvenidos a mi página web</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <div class="container">
-	
-          <h1>SVG Animated Birds</h1>
-          
-          <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
+    <header class="hero">
+      <nav class="nav container">
+          <div class="nav__logo">
+              <h2 class="nav__title">Curso CSS.</h2>
           </div>
-          
-          <div class="bird-container bird-container--two">
-            <div class="bird bird--two"></div>
+
+          <ul class="nav__link nav__link--menu">
+              <li class="nav__items">
+                  <a href="#" class="nav__links">Inicio</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#" class="nav__links">Acerca de</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#" class="nav__links">Contacto</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#" class="nav__links">Blog</a>
+              </li>
+
+              <img src="./images/close.svg" class="nav__close">
+          </ul>
+
+          <div class="nav__menu">
+              <img src="./images/menu.svg" class="nav__img">
           </div>
-          
-          <div class="bird-container bird-container--three">
-            <div class="bird bird--three"></div>
-          </div>
-          
-          <div class="bird-container bird-container--four">
-            <div class="bird bird--four"></div>
-          </div>
-          
-        </div>
-        
       </nav>
+
+      <section class="hero__container container">
+          <h1 class="hero__title">Aprende CSS3 desde CERO hasta dominarlo.</h1>
+          <p class="hero__paragraph">Elige aprender CSS de una vez por todas, una vez que termines este curso serás
+              capaz de crear cualquier layout con CSS y crear tus propias animaciones.</p>
+          <a href="#" class="cta">Comienza ahora</a>
+      </section>
     </header>
-    
-    <section>
-      <h2>Sobre mí</h2>
-      <img src="perfil.jpg" alt="Foto de perfil">
-      <p>Mi nombre es Juan y soy un desarrollador web apasionado por la creación de sitios web hermosos y funcionales.</p>
-    </section>
-    
-    <section>
-      <h2>Mis habilidades</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
-    
-    <footer>
-      <p>&copy; 2023 Juan Perez</p>
-    </footer>
+
   </body>
 </html>
+   <!--  Comentarios   -->
