@@ -1,8 +1,15 @@
 body{
   font-family: sans-serif;
   margin: 0;
-  background-color: rgba(252, 235, 162, 0.384);
 }
+
+#background{
+  background-image: url("fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  opacity: 0.75;
+}
+
 a{
   text-decoration: none;
  color: white;
