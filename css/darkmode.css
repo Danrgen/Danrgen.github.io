@@ -1,0 +1,24 @@
+body.dark{
+    background-color: #3127278e;
+}
+
+body.dark header h1{
+    filter: invert(1);
+}
+
+body.dark #darkmode{
+    background-position: right center;
+}
+
+body.dark #box{
+    background-color: rgba(185, 179, 109, 0.5);
+  }
+
+
+body.dark #info-section {
+    background-color: #8a8a8aa9;
+  }
+
+  body.dark nav{
+    background: #333333;
+  }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="shortcut icon" href="Bocchi.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo">
+            <h2 class="nombre-empresa">Unidad Politecnica Salesiana</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='page2.html'>html</a></li>
+                <li><a href='page3.html'>css</a></li>
+                <li><a href='page4.html'>js</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h3>Atributos comunes dentro de HTML</h3>
+                    <ul>
+                        <li><strong>Id (identificador):</strong> Este atributo establece un identificador único a las etiquetas dentro de HTML.
+                            Se debe tener en cuenta que solo puede ser utilizado una vez por documento.</li>
+                            <!-- Imagen del Id -->
+
+                        <br><p>Asi como puede ser utilizado también se necesita saber sus normas como:</p>
+                        <ul>
+                            <br><li>Los identificadores no deben empezar por números, pero si puede contener estos a lo largo del nombre.</li>
+                            <li>Es necesario que su texto deba estar en kebab-case, esto quiere decir que debe contener minúsculas y ser separadas por un guion (-).</li>
+                            <li>No debe contener caracteres raros, con acentos y mucho menos emojis.</li>
+                            <li>En un mismo documento HTML jamás puede existir más de un elemento con el mismo id.</li>
+                        </ul>
+                        <br><li><strong>Class:</strong> El atributo Class establece una clase (genero) a una etiqueta. A diferencia del id, este si puede ser utilizada 
+                            las veces que desee el usuario por documento. Se utilizará el atributo class donde puede ir cualquier nombre de clase que se desee ya 
+                            que no son como el id con sus limitaciones, por lo tanto, estos pueden tener más elementos dentro de un mismo documento HTML.</li>
+                            <!-- Imagen del Class -->
+
+                            <br><li><strong>Style:</strong> El atributo style aplica dentro y directamente al elemento HTML con propiedades CSS. La mejor forma de aplicar un
+                            estilo CSS en HTML es colocar su código CSS en el documento .css. Así garantizamos que nuestro código este bien organizado y separado, 
+                            pero puede haber ocasiones en los que agreguemos código css en la propia etiqueta de un HTML.</li>
+                            <!-- Imagen del style -->
+                    </ul>
+                    <h3>Atributos de idioma</h3>
+                    <ul>
+                        <li><strong>lang (idioma):</strong> El atributo lang indica el idioma del contenido de la etiqueta. El valor de dicho atributo debe o tendrá 
+                            que ser el código ISO 639-1 del idioma al que tengamos la necesidad de hacer referencia. Hay que aclarar que es necesario hacer en la 
+                            etiqueta &lt;html&gt; ya que esta etiqueta abarca todo el documento.</li>
+                            <!-- Imagen del lang -->
+
+                        <br><li><strong>translate (traducción):</strong> Dentro de HTML se puede indicar el atributo translate, este acepta los valores yes y no. Dentro 
+                            del documento todas las etiquetas que se agregan están por defecto en (yes), esto quiere decir que las etiquetas están marcadas como “traducibles”.</li>
+                            <!-- Imagen del translate -->
+
+                        <br><li><strong>dir (direccionalidad):</strong> Existe el atributo dir que permite al desarrollador indicar la direccionalidad del texto en el documento. 
+                            Esto nos llega a ser útil por ejemplo con los idiomas en los que se escribe o lee de derecha a izquierda, en lugar como lo hacemos en español, ingles, 
+                             que es de izquierda a derecha. El valor por defecto de este atributo es ltr (eft to right, de izquierda a derecha), pero podemos modificar este y estableces 
+                             el valor rtl (right to left, de derecha a izquierda).</li>
+                             <!-- Imagen del Dir -->
+                    </ul>
+                    <h3>Estructura del documento HTML</h3>
+                    <ul>
+                        <li><strong>DOCTYPE:</strong> Es una etiqueta especial que se escribe en la primera línea del documento HTML. Debe ir especificado siempre para que el navegador
+                            sepa de qué tipo de documento HTML se trata. Es una etiqueta obligatoria.</li>
+                            <!-- Imagen del DOCTYPE -->
+
+                        <br><li><strong>Head (metadatos):</strong> Cuando hablamos de la etiqueta <head> de un documento HTML, muchas veces la denominamos cabecera HTML. 
+                            Sin embargo, esta cabecera no es una parte visual de la página web, sino una parte de nuestro código HTML donde se incluyen ciertas etiquetas de metadatos, 
+                            es decir, unas etiquetas que establecen ciertos datos que no tienen que verse necesariamente de forma visual.</li>
+                        <br><p>Ejemplos de metadatos en documento HTML pueden ser los siguientes:</p>
+                        <ul>
+                            <br><li>Título de la página web (aparece en la pestaña del navegador). Esta etiqueta es obligatoria.</li>
+                            <li>Descripción de la página (aparece en los resultados de Google)</li>
+                            <li>Miniatura/preview de la página (aparece al poner enlace en redes sociales)</li>
+                            <li>Icono de la página (aparece en la pestaña del navegador)</li>
+                        </ul>
+                        <br><li><strong>Body (cuerpo):</strong> La otra parte principal de un documento HTML es la etiqueta &lt;body&gt;. Todos los elementos visuales de una página se 
+                            encuentran en el interior de la etiqueta &lt;body&gt;, por lo que es una de las partes más importantes de una página web. Esta sección va inmediatamente después del 
+                            cierre de la etiqueta &lt;/head&gt;.</li>
+                            <!-- Imagen del body -->
+                    </ul>
+
+
+
+
+
+
+
+</html>

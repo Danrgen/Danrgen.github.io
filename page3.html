@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="shortcut icon" href="Bocchi.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo">
+            <h2 class="nombre-empresa">Unidad Politecnica Salesiana</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='page2.html'>html</a></li>
+                <li><a href='page3.html'>css</a></li>
+                <li><a href='page4.html'>js</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h3>Formas de enlazar CSS</h3>
+                    <ul>
+                        <li><strong>Archivo CSS externo:</strong> En la cabecera de nuestro documento HTML, más concretamente
+                             en el bloque &lt;head&gt;&lt;/head&gt;, podemos incluir una etiqueta &lt;link&gt; con la que establecemos una relación 
+                             entre el documento HTML actual y el archivo .css que indicamos en el atributo href.
+                             De esta forma, los navegadores sabrán que deben aplicar los estilos que se encuentren en el archivo index.css que está 
+                             junto al documento index.html actual. Se aconseja escribir esta línea lo antes posible (sobre todo, antes de los scripts), 
+                             obligando así al navegador a aplicar los estilos cuanto antes y eliminar la falsa percepción visual de que la página está 
+                             en blanco y no ha sido cargada por completo.</li>
+                            <!-- Imagen del CSS EXTERNO -->
+
+                        <br><li><strong>Bloque de estilos:</strong> Otra de las formas que existen para incluir estilos CSS en nuestra página es la de 
+                            añadirlos directamente en el documento HTML, a través de una etiqueta &lt;style&gt; que contendrá el código CSS:</li>
+                            <p>Este sistema puede servirnos en ciertos casos particulares, pero hay que darle prioridad al método anterior (CSS externo), 
+                                ya que incluyendo el código CSS en el interior del archivo HTML arruinamos la posibilidad de tener el código CSS en un 
+                                documento a parte, pudiendo reutilizarlo y enlazarlo desde otros documentos HTML mediante la etiqueta &lt;link&gt;.</p>
+                            <!-- Imagen del bloque de estilos -->
+
+                        <br><li><strong>Estilos en línea:</strong>Se trata de hacerlo directamente, a través del atributo style de la propia etiqueta 
+                            donde queramos aplicar el estilo, colocando ahí las propiedades CSS (que pueden separarse por ;)</li>
+                            <!-- Imagen del estilos en linea -->
+                    </ul>
+                    <h3>Estructura de CSS</h3>
+                    <ul>
+                        <li><strong>Relacion del HTML con CSS</strong></li>
+                        <p>En primer lugar, recuerda que debemos tener el documento .css enlazado desde nuestro documento .html, preferiblemente desde
+                             una etiqueta &lt;link rel="stylesheet"&gt;. En su atributo href colocaremos el nombre del documento .css que contiene los estilos:</p>
+                        <!-- Imagen de la relacion del html con css -->
+                        <br><li><strong>Sintaxis CSS</strong></li>
+                        <p>El código CSS de dicho documento, se basa en una serie de conceptos que debemos tener claros.</p>
+                        <!-- Imagen de la sintaxis CSS -->
+                        
+                        <ul>
+                            <br><li>Selector: Elemento o elementos del documento que vamos a seleccionar para aplicarle un estilo concreto.</li>
+                            <li>Propiedad: Característica principal que vamos a definir con el valor indicado a continuación.</li>
+                            <li>Valor: Cada propiedad tiene una serie de valores concretos asignables, con los que tendrá uno u otro comportamiento.</li>
+                            <li>Comentario: Fragmento de texto entre /* y */ con anotaciones o aclaraciones para el desarrollador (el navegador los ignorará).</li>
+                            <li>Regla: Par de propiedad y su respectivo valor asociado.</li>
+                        </ul>
+                        <br><li><strong>Documento CSS</strong></li>
+                        <p>Los documentos CSS se forman por cientos de reglas de este estilo, con diferentes selectores, propiedades y valores. Habitualmente, 
+                            cada bloque declarado suele incluir múltiples reglas.</p>
+                        <p>Para evitar perder el control del mismo, hay que tener buenas prácticas al escribir código, que, aunque no son necesarias son obligatorias
+                            para que sea más fácil de leer:</p>
+                        <ul>
+                            <br><li>Escribe una regla por línea. Será mucho más fácil de leer y modificar.</li>
+                            <li>Usa la indentación. Tras escribir el carácter { al empezar un bloque de reglas, las propiedades se separan hacia la derecha. 
+                                Esto hace que sea más fácil de leer y se considera una buena práctica de desarrollo y de programación en general.</li>
+                            <li>El último punto y coma de un bloque de reglas es opcional. Sin embargo, se suele aconsejar escribirlo para mantener una
+                                coherencia y evitar problemas o descuidos al modificar posteriormente el código.</li>
+                        </ul>
+                    </ul>
+
+</html>

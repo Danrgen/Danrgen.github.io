@@ -5,67 +5,278 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentacion</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/darkmode.css" />
+    <link rel="stylesheet" type="text/css" href="css/ejemplos.css">
 
 </head>
 
 <body>
+
     <header>
-        <a href="/index.html" class="logo">
+        <a href="index.html" class="logo">
             <img src="logo.png" alt="logo">
             <h2 class="nombre-empresa">Unidad Politecnica Salesiana</h2>
         </a>
+        <a href="contacto.html" class="boton2">Contactanos!</a>
+        <a id="darkmode" href="javascript:void(0)">Modo oscuro</a>
         <nav>
-            <a href="/index.html" class="enlace">Inicio</a>
-            <a href="/page2.html" class="enlace">Codigos</a>
-            <a href="/page3.html" class="enlace">Contacto</a>
+            <ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='page2.html'>html</a></li>
+                <li><a href='page3.html'>css</a></li>
+                <li><a href='page4.html'>js</a></li>
+            </ul>
         </nav>
     </header>
+    <main>
 
-    <script src="script.js"></script>
-
+    </main>
+    <script src="js/darkmode.js"></script>
+    <script src="js/script.js"></script>
     <div id="background">
+        <!-- 1era Seccion -->
         <div id="container">
+            <div class="tarjeta"></div>
             <div id="box">
-            <h1>Importancia de los estándares HTML</h1>
-            <ul>
-                <li><dfn>Interoperabilidad:</dfn> Los estándares HTML aseguran que el contenido web se muestre
-                    correctamente en diferentes navegadores y dispositivos.</li>
-                <li><dfn>Accesibilidad:</dfn> Los estándares HTML permiten a los desarrolladores crear sitios web
-                    accesibles para personas con discapacidades.</li>
-                <li><dfn>Eficiencia y mantenibilidad:</dfn> El cumplimiento de los estándares HTML también puede mejorar
-                    la eficiencia y la mantenibilidad del código HTML.</li>
-                <li><dfn>Compatibilidad futura:</dfn> Los estándares HTML se actualizan regularmente para mantenerse al
-                    día con las tecnologías web emergentes.</li>
-            </ul>
-            <p>En resumen, los estándares HTML son importantes porque permiten una experiencia de usuario consistente,
-                mejoran la accesibilidad, aumentan la eficiencia y mantenibilidad del código, y garantizan la
-                compatibilidad futura.</p>
+                <h1>Importancia de los estándares HTML</h1>
+                <ul>
+                    <li><dfn>Interoperabilidad:</dfn> Los estándares HTML aseguran que el contenido web se muestre
+                        correctamente en diferentes navegadores y dispositivos.</li>
+                    <li><dfn>Accesibilidad:</dfn> Los estándares HTML permiten a los desarrolladores crear sitios web
+                        accesibles para personas con discapacidades.</li>
+                    <li><dfn>Eficiencia y mantenibilidad:</dfn> El cumplimiento de los estándares HTML también puede
+                        mejorar
+                        la eficiencia y la mantenibilidad del código HTML.</li>
+                    <li><dfn>Compatibilidad futura:</dfn> Los estándares HTML se actualizan regularmente para mantenerse
+                        al
+                        día con las tecnologías web emergentes.</li>
+                </ul>
+                <p>En resumen, los estándares HTML son importantes porque permiten una experiencia de usuario
+                    consistente,
+                    mejoran la accesibilidad, aumentan la eficiencia y mantenibilidad del código, y garantizan la
+                    compatibilidad futura.</p>
             </div>
         </div>
 
+        <!-- 2da Seccion -->
         <div id="info-section">
             <h2>3 lenguajes usados para creacion de paginas web</h2>
+            <!-- 1er Item -->
             <div class="info-item">
-                <h3>HTML5</h3>
-                <p>Descripción del primer elemento</p>
+                <button class="boton" onclick="mostrarSeccion('seccion1')">HTML</button>
+                <div id="seccion1" style="display:none;">
+                    <h2>HTML</h2>
+                    <p>En HTML, puedes utilizar diferentes etiquetas para dar formato a los textos y elementos de tu
+                        página
+                        web. Algunas de las etiquetas más utilizadas para dar formato a los párrafos son:</p>
+
+                    <ul>
+                        <li>La etiqueta &lt;p&gt; para definir un párrafo</li>
+                        <li>La etiqueta &lt;strong&gt; o &lt;b&gt; para texto en negrita</li>
+                        <li>La etiqueta &lt;em&gt; o &lt;i&gt; para texto en cursiva</li>
+                        <li>La etiqueta &lt;u&gt; para subrayar un texto</li>
+                        <li>La etiqueta &lt;br&gt; para insertar un salto de línea dentro de un párrafo</li>
+                        <li>La etiqueta &lt;blockquote&gt; para citar un texto largo o un párrafo entero</li>
+                    </ul>
+
+                    <p>Además, puedes utilizar estilos CSS para personalizar aún más el diseño y formato de los
+                        elementos de
+                        tu página web.</p>
+
+                    <p>A continuación, se muestra un ejemplo básico de código HTML:</p>
+                    <xmp>
+                        <!DOCTYPE html>
+                        <html>
+
+                        <head>
+                            <title>Mi página web</title>
+                        </head>
+
+                        <body>
+                            <h1>Bienvenidos a mi página web</h1>
+                            <p>Esta es una página de ejemplo creada con HTML.</p>
+                        </body>
+
+                        </html>
+                    </xmp>
+                    <p>Recuerda que este es solo un ejemplo básico y que puedes utilizar muchas más etiquetas y
+                        atributos
+                        para crear páginas web más complejas.</p>
+
+                    <a href="page2.html" class="boton2">Leer mas..</a>
+                </div>
             </div>
+
+            <!-- 2do Item -->
             <div class="info-item">
-                <h3>CSS</h3>
-                <p>Descripción del segundo elemento</p>
+                <button class="boton" onclick="mostrarSeccion('seccion2')">CSS</button>
+                <div id="seccion2" style="display:none;">
+                    <h2>CSS</h2>
+                    <p>CSS es un lenguaje de estilos que se utiliza para dar formato y estilo a documentos HTML.
+                        A continuación se presentan algunos de los principales estilos para CSS y la definición de
+                        algunos elementos.</p>
+
+                    <ul>
+                        <li><strong>Colores:</strong>
+                            Los colores son una parte importante de cualquier diseño. En CSS se pueden especificar los
+                            colores utilizando nombres de color, códigos hexadecimales, RGB y HSL.</li>
+                        <br>
+                        <li><strong>Tipografía:</strong>
+                            La tipografía es otra parte importante del diseño. En CSS se pueden especificar fuentes,
+                            tamaños de letra, espaciado entre líneas y otros aspectos de la tipografía. Por ejemplo:
+                        </li>
+                        <br>
+                        <li><strong>Márgenes y espaciado:</strong>
+                            Los márgenes y el espaciado son importantes para separar elementos y crear un diseño limpio
+                            y organizado.
+                            En CSS se pueden especificar márgenes, espaciado y relleno utilizando diferentes
+                            propiedades. Por ejemplo:</li>
+                        <br>
+                        <li><strong>Posicionamiento:</strong>
+                            El posicionamiento se utiliza para controlar la ubicación de los elementos en una página.
+                            En CSS se pueden especificar diferentes tipos de posicionamiento, como estático, relativo,
+                            absoluto y fijo. Por ejemplo:</li>
+                        <br>
+                        <li><strong>Diseño responsivo:</strong>
+                            El diseño responsivo se refiere a la capacidad de un sitio web para ajustarse a diferentes
+                            tamaños de pantalla y dispositivos.
+                            En CSS se pueden utilizar diferentes técnicas, como los media queries, para crear diseños
+                            responsivos. Por ejemplo:</li>
+                    </ul>
+
+                    <div id="ejemplos-css">
+                        Este es un ejemplo de texto con los estilos CSS definidos en el archivo estilos.css.
+                    </div>
+
+                    <br><br><br><br><br><br>
+                    <a href="page3.html" class="boton2">Leer mas..</a>
+
+                </div>
             </div>
+            <!-- 3er Item -->
             <div class="info-item">
-                <h3>JS</h3>
-                <p>Descripción del tercer elemento</p>
+                <button class="boton" onclick="mostrarSeccion('seccion3')">JAVA SCRIPT</button>
+                <div id="seccion3" style="display:none;">
+                    <h2>JavaScript</h2>
+                    <p>JavaScript es un lenguaje de programación que se utiliza en conjunto con HTML y CSS para agregar
+                        interactividad y dinamismo a las páginas web.
+                        A continuación, se presentan algunas de las principales funciones de JavaScript:</p>
+                    <ul>
+                        <li><strong>Manipulación del DOM:</strong> JavaScript puede acceder y modificar los elementos de
+                            la página web a través del DOM (Modelo de Objetos del Documento).
+                            Esto permite agregar, eliminar o modificar elementos y contenido en tiempo real, sin
+                            necesidad de recargar la página.</li>
+                        <br>
+                        <li><strong>Manejo de eventos: </strong>JavaScript puede responder a eventos como clics de
+                            mouse, pulsaciones de teclado y desplazamiento de la página.
+                            Esto permite crear interacciones dinámicas en respuesta a las acciones del usuario.</li>
+                        <br>
+                        <li><strong>Validación de formularios:</strong>JavaScript puede verificar que los datos
+                            ingresados por el usuario en un formulario sean válidos antes de enviarlos al servidor.
+                            Esto evita que se envíen datos incorrectos y mejora la experiencia del usuario.</li>
+                        <br>
+                        <li><strong>Animación y efectos visuales:</strong>JavaScript puede crear animaciones y efectos
+                            visuales en la página, como transiciones, desplazamientos y cambios de color.
+                            Esto agrega interés y atractivo visual a la página.</li>
+                        <br>
+                        <li><strong>Comunicación con el servidor:</strong>JavaScript puede enviar y recibir datos del
+                            servidor sin necesidad de recargar la página. Esto permite crear aplicaciones
+                            web dinámicas que actualizan la información en tiempo real.</li>
+                        <br>
+                        <li><strong>Uso de APIs:</strong>JavaScript puede acceder a APIs (Interfaces de Programación de
+                            Aplicaciones) de terceros para integrar servicios y
+                            funcionalidades en la página web. Esto permite agregar mapas, servicios de pago, integración
+                            de redes sociales, entre otras.</li>
+                        <br>
+                        <li><strong>Programación orientada a objetos:</strong>JavaScript es un lenguaje de programación
+                            orientado a objetos, lo que significa que permite crear
+                            objetos y métodos que se pueden utilizar y reutilizar en diferentes partes de la página web.
+                            Esto permite escribir código más limpio, organizado y fácil de mantener.</li>
+                    </ul>
+                    <a href="page4.html" class="boton2">Leer mas..</a>
+
+                </div>
             </div>
+
+            <!-- 4to Item -->
+            <div class="info-item">
+                <button class="boton" onclick="mostrarSeccion('seccion4')">LINKS PARA MAS INFORMACION</button>
+                <div id="seccion4" style="display:none;">
+                    <h2>LINKS PARA APRENDER HTML, CSS, JAVASCRIPT</h2>
+                    <br>
+                    <h3>LINK HTML</h3>
+                    <ul>
+                        <li><a
+                                href="https://www.youtube.com/watch?v=cqMfPS8jPys&list=PLhSj3UTs2_yVHt2DgHky_MzzRC58UHE4z">Aprendiendo
+                                HTML desde 0</a></li>
+                        <li><a
+                                href="https://www.youtube.com/watch?v=PvTRb0H_iqg&list=PLg9145ptuAijps8rns9muRGmxlhO1vOe1&index=1">Curso
+                                html</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=mNbnV3aN3KA">Tutorial Basico HTML en 15 minutos</a>
+                        </li>
+                    </ul>
+                    <h3>LINK CSS</h3>
+                    <ul>
+                        <li><a
+                                href="https://www.youtube.com/watch?v=iS1vCsF_pNY&list=PLug2BNqcHKuJvJtVXLHa7hPnc6AtoPjvs&index=1">Curso
+                                Básico de HTML y CSS 01 -Introducción a la programación Web</a></li>
+                        <li><a
+                                href="https://www.youtube.com/watch?v=rr2H086z16s&list=PLPl81lqbj-4LKo66cEts5yC_AjOvqKptm&index=1">HTML
+                                y CSS curso práctico - Desde 0</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=3yM5uXp-T_0">Aprende CSS en 15 minutos</a></li>
+                    </ul>
+                    <h3>LINK JAVASCRIPT</h3>
+                    <ul>
+                        <li><a
+                                href="https://www.youtube.com/watch?v=DAkQ_2xmmg8&list=PLg9145ptuAijmLpVEIJxVl5r9mCDjzIRU&index=1">CURSO
+                                de JAVASCRIPT 2022 [para principiantes]</a></li>
+                        <li><a
+                                href="https://www.youtube.com/watch?v=xnWtGNiG2lg&list=PLhSj3UTs2_yVC0iaCGf16glrrfXuiSd0G">Curso
+                                Basico de JavaScript desde 0</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=Q9fwkpxr3Dw">Aprende JavaScript en 15 minutos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 5to cuadro -->
+        <div id="info-section">
+            <h3>Validadores de estándares HTML</h3>
+            <p>Los validadores de estándares HTML son herramientas que se utilizan para verificar que el código HTML de
+                una página web cumple con las normas y estándares
+                definidos por el W3C (Consorcio World Wide Web). Estos validadores permiten identificar errores en el
+                código HTML y ofrecen sugerencias para corregirlos.</p>
+            <br>
+            <p>A continuación, se presentan algunos de los validadores de estándares HTML más populares:</p>
+            <ul>
+                <li><strong>Validador HTML del W3C:</strong>Es el validador oficial del W3C y se encuentra en la
+                    dirección web https://validator.w3.org/. Permite validar el código HTML de una
+                    página web y mostrar los errores y advertencias correspondientes. Además, ofrece sugerencias para
+                    corregir los errores y enlaces a recursos adicionales para mejorar el código.</li>
+                <br>
+                <li><strong>Validador HTML5 del W3C:</strong>Es similar al validador HTML del W3C, pero está diseñado
+                    específicamente para validar código HTML5.
+                    Se encuentra en la dirección web https://validator.w3.org/nu/.</li>
+                <br>
+                <li><strong>HTML Validator de la WDG:</strong>Es un validador de HTML gratuito y fácil de usar que se
+                    encuentra en la dirección web https://htmlhelp.com/tools/validator/.
+                    Ofrece una interfaz simple y permite validar el código HTML de una página web.</li>
+                <br>
+                <li><strong>Total Validator:</strong>Es un validador de HTML que se enfoca en la accesibilidad y la
+                    usabilidad de la página web. Permite validar el código HTML,
+                    CSS y enlaces rotos. Además, ofrece una versión gratuita y una versión de pago con funcionalidades
+                    adicionales. Se encuentra en la dirección web https://www.totalvalidator.com/.</li>
+                <br>
+                <li><strong>AMP Validator:</strong>Es un validador de HTML específico para páginas web AMP (Accelerated
+                    Mobile Pages), que es una tecnología
+                    de Google para acelerar la carga de páginas web en dispositivos móviles. Se encuentra en la
+                    dirección web https://validator.ampproject.org/.</li>
+            </ul>
         </div>
 
     </div>
-
-
-
 
 </body>
 
